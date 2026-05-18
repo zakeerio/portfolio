@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, CalendarDays } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { fadeUp, stagger } from "../../lib/animations";
 
 const heroSkills = ["Laravel", "WordPress", "Shopify", "Webflow", "SaaS"];
+const calendlyUrl = "https://calendly.com/zakeerio25/30min?back=1&month=2026-05";
 
 export function HeroSection() {
   return (
@@ -17,14 +18,14 @@ export function HeroSection() {
           <motion.h1 variants={fadeUp} className="text-5xl font-black tracking-tight text-white md:text-7xl">
             Zahid Ali
             <span className="mt-3 block bg-gradient-to-r from-cyan-300 via-blue-300 to-violet-300 bg-clip-text text-4xl text-transparent md:text-6xl">
-              Full Stack Laravel & Shopify Developer
+              Laravel, Shopify, Webflow & WordPress Developer
             </span>
           </motion.h1>
           <motion.p variants={fadeUp} className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
-            Building scalable web applications, Shopify stores, Webflow experiences, and custom business solutions for global brands.
+            I build reliable websites, eCommerce stores, custom dashboards, and full stack web applications for businesses that need clean execution.
           </motion.p>
           <motion.p variants={fadeUp} className="mt-5 max-w-2xl text-base leading-8 text-slate-400">
-            Experienced Full Stack Developer specializing in Laravel, Shopify, Webflow, WordPress, React, Firebase, and custom eCommerce solutions. Passionate about building scalable systems, modern interfaces, and high-performing digital products.
+            With 10+ years of experience across Laravel, Shopify, Webflow, WordPress, React, Firebase, and custom integrations, I help agencies, startups, SaaS teams, and eCommerce brands launch and improve digital products.
           </motion.p>
           <motion.div variants={fadeUp} className="mt-9 flex flex-col gap-4 sm:flex-row">
             <Button asChild size="lg" className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-7 py-3 text-slate-950 shadow-xl shadow-cyan-500/20 hover:opacity-90">
@@ -34,7 +35,7 @@ export function HeroSection() {
               <a href="#contact">Hire Me</a>
             </Button>
             <Button asChild size="lg" variant="ghost" className="inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-slate-200 hover:bg-white/10 hover:text-white">
-              <a href="#resume"><Download className="mr-2 h-4 w-4" /> Download Resume</a>
+              <a href={calendlyUrl} target="_blank" rel="noreferrer"><CalendarDays className="mr-2 h-4 w-4" /> Book a Call</a>
             </Button>
           </motion.div>
         </motion.div>

@@ -19,8 +19,8 @@ export function AboutSection() {
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           eyebrow="About Me"
-          title="Senior developer mindset with business-focused execution."
-          description="I build fast, scalable, and conversion-focused digital products for startups, agencies, SaaS companies, Shopify businesses, and international clients."
+          title="Senior developer mindset with practical business execution."
+          description="I help businesses, agencies, and founders turn ideas into reliable, scalable digital products that are easy to manage and ready to grow."
         />
         <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
           <motion.div
@@ -32,10 +32,10 @@ export function AboutSection() {
             className="rounded-[2rem] border border-white/10 bg-white/[0.05] p-8 shadow-2xl backdrop-blur-xl md:p-10"
           >
             <p className="text-lg leading-9 text-slate-300">
-              I am a Full Stack Developer with over 10 years of experience building scalable applications, eCommerce platforms, SaaS products, and modern websites for businesses worldwide.
+              I am a Full Stack Developer with over 10 years of experience building web applications, eCommerce platforms, SaaS products, custom dashboards, and modern websites for clients worldwide.
             </p>
             <p className="mt-5 text-lg leading-9 text-slate-300">
-              My expertise includes Laravel, Shopify, Webflow, WordPress, React JS, Firebase, WooCommerce, API integrations, and custom backend systems.
+              My work covers Laravel backends, Shopify stores, Webflow builds, WordPress systems, API integrations, Firebase features, React interfaces, and custom business tools.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {strengths.map((item) => (

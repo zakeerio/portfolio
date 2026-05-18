@@ -6,8 +6,12 @@ import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
 import { AboutSection } from "./components/sections/AboutSection";
 import { ContactSection } from "./components/sections/ContactSection";
+import { BenefitsSection } from "./components/sections/BenefitsSection";
+import { FaqSection } from "./components/sections/FaqSection";
 import { HeroSection } from "./components/sections/HeroSection";
+import { ProcessSection } from "./components/sections/ProcessSection";
 import { ProjectsSection } from "./components/sections/ProjectsSection";
+import { ProofStripSection } from "./components/sections/ProofStripSection";
 import { ServicesSection } from "./components/sections/ServicesSection";
 import { TechStackSection } from "./components/sections/TechStackSection";
 import { TestimonialsSection } from "./components/sections/TestimonialsSection";
@@ -30,11 +34,15 @@ export default function App() {
       <CustomCursor hovered={cursor.hovered} position={cursor.position} visible={cursor.visible} />
       <Header />
       <HeroSection />
+      <ProofStripSection />
       <AboutSection />
+      <ProcessSection />
       <TechStackSection />
       <ProjectsSection />
       <ServicesSection />
+      <BenefitsSection />
       <TestimonialsSection />
+      <FaqSection />
       <ContactSection />
       <Footer />
     </main>
